@@ -19,7 +19,7 @@ class Measurement
     private ?location $location = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
-    private ?\DateTimeInterface $date_time = null;
+    private ?\DateTimeInterface $dateTime = null;
 
 
     #[ORM\Column(type: Types::DECIMAL, precision: 3, scale: 0)]
@@ -45,14 +45,14 @@ class Measurement
         return $this;
     }
 
-    public function getDate_Time(): ?\DateTimeInterface
+    public function getDateTime(): ?\DateTimeInterface
     {
-        return $this->date_time;
+        return $this->dateTime;
     }
 
-    public function setDate_Time(\DateTimeInterface $date_time): static
+    public function setDateTime(\DateTimeInterface $dateTime): static
     {
-        $this->date_time = $date_time;
+        $this->dateTime = $dateTime;
 
         return $this;
     }

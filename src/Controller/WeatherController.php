@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Location;
+use App\Form\LocationType;
 use App\Repository\MeasurementRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;

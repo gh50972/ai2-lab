@@ -11,7 +11,11 @@
 
     <ul>
         {% for measurement in measurements %}
-            <li>{{ measurement.date_time|date() }}: {{ measurement.celsius }}&deg;C</li>
+        <tr>
+            <td>{{ measurement.dateTime ? measurement.dateTime|date('Y-m-d H:i:s') : '' }}</td>
+            <td>{{ measurement.celsius }}</td>
+            <td>{{ measurement.cloudy }}</td>
+            <td>
         {% endfor %}
     </ul>
 </main>
